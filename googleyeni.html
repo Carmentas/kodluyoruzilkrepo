@@ -8,32 +8,113 @@
     <style>
       body {
         background-color: rgb(32, 32, 32);
+        color: #bdc1c6;
       }
 
       .logo {
-        margin-top: 25%;
+        margin-top: 30%;
       }
 
       .submitbutton {
         width: auto;
         color: white;
-        background-color: rgb(56, 56, 56);
-        font-size: 12px;
-        padding: 10px;
+        background-color: #303134;
+        font-size: 14px;
+        padding: 10px 15px 10px 15px;
         border-radius: 3px;
+        border: 1px solid #303134;
+        cursor: pointer;
+        margin-right: 5px;
+      }
+
+      .submitbutton:hover {
+        border: 1px solid white;
       }
 
       .searchbar {
-        width: 50%;
+        width: 60%;
         margin: auto;
         border-radius: 25px;
-        height: 30px;
+        height: 40px;
         background-color: transparent;
-        border: 1px solid white;
+        border: 0.2px solid rgb(121, 121, 121);
         color: white;
+        margin-top: 30px;
+      }
+
+      .avatar {
+        border-radius: 50%;
+        padding: 4px;
+      }
+
+      .avatar-bg {
+        background: linear-gradient(red, blue 25%, green 50%, yellow 75%);
+        border-radius: 50%;
+        width: 38px;
+        height: 38px;
+        display: inline-block;
+      }
+
+      .link {
+        font-family: arial, sans-serif;
+        font-size: 13px;
+        cursor: pointer;
+        text-decoration: none;
+        line-height: 38px;
+        text-align: center;
+        height: 38px;
+        color: white;
+        padding-right: 10px;
+      }
+
+      .link:hover {
+        text-decoration: underline;
+      }
+
+      header {
+        right: 20px;
+        position: absolute;
+        top: 20px;
+      }
+
+      footer {
+        background: #171717;
+        display: block;
+        bottom: 0px;
+        position: absolute;
+        left: 0;
+        height: auto;
+        width: 100%;
+        justify-content: space-evenly;
+      }
+
+      .bottomlink {
+        color: #999da2;
+        font-family: arial, sans-serif;
+        text-decoration: none;
+        font-size: 14px;
+        cursor: pointer;
+        padding-right: 20px;
       }
     </style>
   </head>
+
+  <header>
+    <a href="https://mail.google.com/mail/&ogbl" class="link">Gmail</a>
+    <a href="https://www.google.com.tr/imghp?hl=en&ogbl" class="link">Images</a>
+    <div class="avatar-bg">
+      <center>
+        <a
+          href="https://accounts.google.com/SignOutOptions?hl=en&continue=https://www.google.com/"
+        >
+          <img
+            src="https://lh3.googleusercontent.com/ogw/ADea4I7uwxvf_2Rwe1vFDPxQ9Rz9l685K9Wi7_lSIjo-_A=s32-c-mo"
+            class="avatar"
+        /></a>
+      </center>
+    </div>
+  </header>
+
   <body>
     <center>
       <div class="logo">
@@ -43,11 +124,41 @@
       </div>
       <input type="search" class="searchbar" />
       <br /><br /><br />
-      <input type="submit" class="submitbutton" value="Google Search" /><input
-        type="submit"
-        class="submitbutton"
-        value="I'm Feeling Lucky"
-      />
+      <input type="button" class="submitbutton" value="Google Search" />
+      <input type="button" class="submitbutton" value="I'm Feeling Lucky" />
+      <br /><br />
+      <p style="font-size: 14px; display: inline-block">Google offered in:</p>
+      <a
+        href="https://www.google.com/setprefs?sig=0_L06hDyak8PCzXVE44k2NMH9Ha_8%3D&hl=tr&source=homepage&sa=X&ved=0ahUKEwjH5fHtnK30AhX-gP0HHQVdCCIQ2ZgBCA0"
+        style="color: #8ab4f8; text-decoration: none"
+        >Türkçe</a
+      >
     </center>
   </body>
+
+  <footer>
+    <p
+      style="
+        color: rgba(255, 255, 255, 0.54);
+        font-size: 15px;
+        border-bottom: 1px solid #212327;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        font-family: arial, sans-serif;
+      "
+    >
+      Turkey
+    </p>
+    <center>
+      <a href="https://about.google" class="bottomlink">About</a
+      ><a href="https://ads.google.com" class="bottomlink">Advertising</a
+      ><a href="https://smallbusiness.withgoogle.com" class="bottomlink"
+        >Business</a
+      ><a href="https://www.google.com/search/howsearchworks" class="bottomlink"
+        >How Search Works</a
+      ><a href="https://policies.google.com/" class="bottomlink">Privacy</a
+      ><a href="https://policies.google.com/" class="bottomlink">Terms</a
+      ><a href="" class="bottomlink">Settings</a><br /><br />
+    </center>
+  </footer>
 </html>
